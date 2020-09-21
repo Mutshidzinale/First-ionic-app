@@ -10,13 +10,24 @@
     <ion-label fixed>Password</ion-label>
     <ion-input name="Password" type="password" placeholder="Password " ngModel required></ion-input>
   </ion-item>
-<button class = "button button-block">Login
-</button>
-<label class = "checkbox">
+  <label class = "checkbox">
    <input type = "checkbox"> Remember me
 </label>
+  <ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Login</ion-button>
+        <ion-button [routerLink]="['/register']" expand="block" color="primary">Register</ion-button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<button class = "button button-block">Login
+</button>
      <button class = "button button-block">
   Register
 </button>
- <span class="psw">Forgot <a href="#">password?</a></span>
+ 
 </ion-list>
