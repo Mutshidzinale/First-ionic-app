@@ -1,20 +1,22 @@
-<html>
-
-
-
-<h1> Welcome to Atlanta Guest portal </h1>
-<label for="uname"><b>Username</b></label>
-<input type="text" placeholder="Enter Username" name="uname" required>
-<br>
-
-<label for="psw"><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="psw" required>
-<br>
-<button type="submit">Login</button>
-<label>
-<input type="checkbox" checked="checked" name="remember"> Remember me
+<ion-list>
+<div class = "bar bar-header">
+   <h1 class = "title">Welcome to Atlanta Guest portal</h1>
+</div>
+  <ion-item>
+    <ion-label fixed>Email Address </ion-label>
+     <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input name="Password" type="password" placeholder="Password " ngModel required></ion-input>
+  </ion-item>
+<button class = "button button-block">Login
+</button>
+<label class = "checkbox">
+   <input type = "checkbox"> Remember me
 </label>
-<br>
-     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     <button class = "button button-block">
+  Register
+</button>
  <span class="psw">Forgot <a href="#">password?</a></span>
-<html>
+</ion-list>
